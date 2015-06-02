@@ -45,7 +45,7 @@ RSpec::Matchers.define :include_num_times do |num_times, incl_item|
 
   description do
     ns = num_str(num_times)
-    "include '#{incl_item}' #{ns}"
+    "includes '#{incl_item}' #{ns}"
   end
 
   def num_str(n)

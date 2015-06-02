@@ -6,17 +6,17 @@ describe '#include_num_times' do
     it "has the correct description for once" do
       matcher = include_num_times(1, 'foo')
       matcher.matches?('foobarbaz')
-      expect(matcher.description).to eq "include 'foo' once"
+      expect(matcher.description).to eq "includes 'foo' once"
     end
     it "has the correct description" do
       matcher = include_num_times(3, 'foo')
       matcher.matches?('foobarbaz')
-      expect(matcher.description).to eq "include 'foo' 3 times"
+      expect(matcher.description).to eq "includes 'foo' 3 times"
     end
     it "has the correct description for 0" do
       matcher = include_num_times(0, 'foo')
       matcher.matches?('foobarbaz')
-      expect(matcher.description).to eq "include 'foo' 0 times"
+      expect(matcher.description).to eq "includes 'foo' 0 times"
     end
   end
   context '.should' do
