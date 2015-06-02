@@ -41,6 +41,15 @@ substring occurs N times in a string.
 
     expect(['foo', 'bar', 'foo']).to include_num_times(2, 'foo')
 
+#### match_num_times
+
+This matcher tests that a given regex is matched N times in a string, or
+that an array has N elements matching the regex.
+
+    expect('ffooo bar foo').to match_num_times(2, /foo/)
+
+    expect(['ffooo', 'bar', 'foo foo foo']).to include_num_times(2, /foo/)
+
 ## Contributing
 
 1. Fork it ( https://github.com/jantman/rspec-matcher-num-times/fork )
