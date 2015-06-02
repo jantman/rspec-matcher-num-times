@@ -10,7 +10,7 @@ RSpec::Matchers.define :match_num_times do |num_times, val_regex|
     end
   end
 
-  match_when_negated do |actual|
+  match_for_should_not do |actual|
     if actual.is_a? String
       actual.scan(val_regex).length == num_times ? false : true
     else
@@ -19,7 +19,7 @@ RSpec::Matchers.define :match_num_times do |num_times, val_regex|
     end
   end
 
-  failure_message do |actual|
+  failure_message_for_should do |actual|
     if actual.is_a? String
       res = actual.scan(val_regex).length
     else
@@ -31,7 +31,7 @@ RSpec::Matchers.define :match_num_times do |num_times, val_regex|
     "expected that value would match '#{val_regex.source}' #{ns}, but it is matched #{ns_actual}"
   end
 
-  failure_message_when_negated do |actual|
+  failure_message_for_should_not do |actual|
     if actual.is_a? String
       res = actual.scan(val_regex).length
     else

@@ -10,7 +10,7 @@ RSpec::Matchers.define :include_num_times do |num_times, incl_item|
     end
   end
 
-  match_when_negated do |actual|
+  match_for_should_not do |actual|
     if actual.is_a? String
       actual.scan(incl_item).length == num_times ? false : true
     else
@@ -19,7 +19,7 @@ RSpec::Matchers.define :include_num_times do |num_times, incl_item|
     end
   end
 
-  failure_message do |actual|
+  failure_message_for_should do |actual|
     if actual.is_a? String
       res = actual.scan(incl_item).length
     else
@@ -31,7 +31,7 @@ RSpec::Matchers.define :include_num_times do |num_times, incl_item|
     "expected that value would include '#{incl_item}' #{ns}, but it is included #{ns_actual}"
   end
 
-  failure_message_when_negated do |actual|
+  failure_message_for_should_not do |actual|
     if actual.is_a? String
       res = actual.scan(incl_item).length
     else
