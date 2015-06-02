@@ -12,6 +12,8 @@ This gem provides some rspec matchers to simplify asserting that something is in
 
 ## Installation
 
+### Current Gem Version (for rspec-3)
+
 Add this line to your application's Gemfile:
 
     gem 'rspec-matcher-num-times'
@@ -23,6 +25,16 @@ And then execute:
 Or install it yourself as:
 
     $ gem install rspec-matcher-num-times
+
+### For rspec-2
+
+Add this line to your application's Gemfile:
+
+    gem 'rspec-matcher-num-times', git: "https://github.com/jantman/rspec-matcher-num-times.git", branch: 'rspec2'
+
+And then execute:
+
+    $ bundle
 
 ## Usage
 
