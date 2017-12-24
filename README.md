@@ -2,7 +2,6 @@
 
 [![Build Status](https://travis-ci.org/jantman/rspec-matcher-num-times.svg?branch=master)](https://travis-ci.org/jantman/rspec-matcher-num-times)
 [![Code Coverage](https://codecov.io/github/jantman/rspec-matcher-num-times/coverage.svg?branch=master)](https://codecov.io/github/jantman/rspec-matcher-num-times?branch=master)
-[![Code Climate](https://codeclimate.com/github/jantman/rspec-matcher-num-times/badges/gpa.svg)](https://codeclimate.com/github/jantman/rspec-matcher-num-times)
 [![Gem Version](https://img.shields.io/gem/v/rspec-matcher-num-times.svg)](https://rubygems.org/gems/rspec-matcher-num-times)
 [![Total Downloads](https://img.shields.io/gem/dt/rspec-matcher-num-times.svg)](https://rubygems.org/gems/rspec-matcher-num-times)
 [![Github Issues](https://img.shields.io/github/issues/jantman/rspec-matcher-num-times.svg)](https://github.com/jantman/rspec-matcher-num-times/issues)
