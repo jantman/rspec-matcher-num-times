@@ -5,7 +5,7 @@
 [![Gem Version](https://img.shields.io/gem/v/rspec-matcher-num-times.svg)](https://rubygems.org/gems/rspec-matcher-num-times)
 [![Total Downloads](https://img.shields.io/gem/dt/rspec-matcher-num-times.svg)](https://rubygems.org/gems/rspec-matcher-num-times)
 [![Github Issues](https://img.shields.io/github/issues/jantman/rspec-matcher-num-times.svg)](https://github.com/jantman/rspec-matcher-num-times/issues)
-[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](http://www.repostatus.org/#active)
+[![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](http://www.repostatus.org/badges/latest/inactive.svg)](http://www.repostatus.org/#inactive)
 
 This gem provides some rspec matchers to simplify asserting that something is included or matched N times.
 
